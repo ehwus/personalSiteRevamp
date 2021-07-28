@@ -1,7 +1,7 @@
 {
   const pages = {
     homeHtml: document.getElementById('content').innerHTML,
-    aboutMeHtml: '<p>This will be the about me section</p>',
+    aboutMeHtml: '<p>I like making products.</p>',
     portfolioHtml: '<p>This will be the portfolio section</p>'
   }
 
@@ -15,8 +15,7 @@
       currentSelection.classList.remove('selected');
       link.classList.add('selected');
 
-      const newHtml = pages[link.dataset.htmlVar];
-      content.innerHTML = newHtml;
+      content.innerHTML = pages[link.dataset.htmlVar];
     })
   })
 }
