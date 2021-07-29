@@ -289,7 +289,7 @@ html, body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 2em 4em 4em 4em;
+  padding: 2em 4em 4em 3em;
 }
 
 .main #menu {
@@ -345,6 +345,11 @@ html {
 
 .social a:hover {
   opacity: .5;
+}
+
+#content a {
+  text-decoration: underline;
+  color: black;
 }
 
 @media only screen
