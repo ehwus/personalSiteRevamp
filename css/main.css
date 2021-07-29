@@ -292,10 +292,6 @@ html, body {
   padding: 2em 4em 4em 4em;
 }
 
-.main img {
-  border: 3px solid #333;
-}
-
 .main #menu {
   width: 100%;
   margin-bottom: 2em;
@@ -310,6 +306,9 @@ html, body {
 .homeContent img {
   display: block;
   margin: auto;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #333;
 }
 
 .main a:hover {
@@ -328,9 +327,9 @@ html, body {
   cursor: default;
 }
 
-img {
-  height: 150px;
-  border-radius: 50%;
+.aboutMeContent img {
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 html {

@@ -1,21 +1,18 @@
 {
-  const pages = {
-    homeHtml: document.getElementById('content').innerHTML,
-    aboutMeHtml: '<p>I like making products.</p>',
-    portfolioHtml: '<p>This will be the portfolio section</p>'
-  }
-
   const menu = document.getElementById('menu');
-  const content = document.getElementById('content');
   const menuLinks = menu.querySelectorAll('a');
 
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
-      const currentSelection = menu.querySelector('.selected');
-      currentSelection.classList.remove('selected');
+      const currentLink = menu.querySelector('.selected');
+      currentLink.classList.remove('selected');
       link.classList.add('selected');
 
-      content.innerHTML = pages[link.dataset.htmlVar];
-    })
-  })
+      const currentContent = document.querySelector('.' + currentLink.dataset.section);
+      const newContent = document.querySelector('.' + link.dataset.section);
+
+      currentContent.style.display = "none";
+      newContent.style.display = "block";
+    });
+  });
 }

@@ -14,7 +14,6 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -27,15 +26,15 @@
 <body>
 
 <div class="main">
-  <div id="menu">
-    <a data-html-var="homeHtml" class="selected">Home</a>
-    <a data-html-var="aboutMeHtml">About Me</a>
-    <a data-html-var="portfolioHtml">Portfolio</a>
-  </div>
+  <nav id="menu">
+    <a data-section="homeContent" class="selected">Home</a>
+    <a data-section="aboutMeContent">About Me</a>
+    <a data-section="portfolioContent">Portfolio</a>
+  </nav>
 
   <div id="content">
     <div class="homeContent">
-      <img src="/img/alexheadshot.webp" alt="A headshot of Alex Withington-Smith">
+      <img id="headshot" src="/img/alexheadshot.webp" alt="A headshot of Alex Withington-Smith">
       <h1>Alex Withington-Smith</h1>
       <div class="social">
         <a href="https://www.linkedin.com/in/awithsmith/" title="LinkedIn">
@@ -47,6 +46,21 @@
         <a href="mailto:alex@awithsmith.com" title="Email">
           <i class="fa fa-envelope"></i></a>
       </div>
+    </div>
+    <div class="aboutMeContent" style="display: none;">
+      <img id="#flowChart" src="/img/journeyFlowChart.png"
+           alt="A flow chart representing my journey from a Politics degree to Software Engineering.">
+      <p>Hello 👋 I'm Alex, currently a Software Engineer at
+        <a href="https://www.onlinefilings.co.uk/" target="_blank">Online Filings</a>,
+        a London based FinTech startup. I work across the stack,
+        primarily in PHP, Node/JS, and MongoDB.</p>
+      <p>I was a Product/Commercial Manager at
+        <a href="https://bibliu.com/" target="_blank">BibliU</a>,
+        joining early on to build and commercialise their EdTech product.</p>
+      <p>I learned to code to become a better Product Manager, and accidentally became a Software Engineer!</p>
+    </div>
+    <div class="portfolioContent" style="display: none;">
+      <p>This will be the portfolio section</p>
     </div>
   </div>
 </div>
