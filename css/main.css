@@ -352,6 +352,14 @@ html {
   color: black;
 }
 
+.portfolioContent .portfolioItem a {
+  margin-right: 1em;
+}
+
+.portfolioContent .portfolioItem {
+  margin-top: 2em;
+}
+
 @media only screen
 and (max-width : 640px) {
   .main {
